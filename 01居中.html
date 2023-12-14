@@ -1,0 +1,67 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2023-09-05 17:12:31
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2023-09-07 15:15:08
+ * @FilePath: \测试\.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.利用绝对定位，向右向上移动盒子的50%，然后再用transform:translate(-50%,-50%)平移,因为定位的是左上角 */
+        /* .p{
+            width:100px;
+            height:100px;
+            background-color: pink;
+            position:relative;
+            margin: 0;
+        }
+        .cl{
+            margin: 0;
+            height:50px;
+            width:50px;
+            color:lightblue;
+            position:absolute;
+            top:50%;
+            left:50%;
+            background-color: black;
+            transform:translate(-50%,-50%);
+        } */
+
+        .p{
+            /* 父级相对定位 */
+            position:relative;
+            width:400px;
+            height:400px;
+            margin:0;
+            background-color: pink;
+        }
+        .cl{
+            /* 子级绝对定位 */
+            /* 2.四个方向都设置为0, margin: auto;关键*/
+            margin: auto;
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            width:100px;
+            height:100px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p">
+        <div class="cl">定位</div>
+    </div>
+</body>
+
+</html>
